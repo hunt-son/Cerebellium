@@ -1,5 +1,5 @@
 module GetawayHelper
-	def road_tripper(start, finish)
-
+	def points_of_interest(start, radius)
+		
 	end
 end
