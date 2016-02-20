@@ -1,6 +1,7 @@
 class GetawayController < ApplicationController
 
 	def index
+		puts Geocoder.search(params[:start])[0].class
 		@startLocation = Geocoder.search(params[:start])[0].coordinates
 		@radius = params[:radius]
 		@list = points_of_interest(@startLocation, @radius, ["food", "museum", "zoo", "bowling_alley", "shopping_mall", "aquarium", "amusement_park", "spa"])
