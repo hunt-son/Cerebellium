@@ -1,0 +1,75 @@
+$font-title: Serif, Sans-Serif;
+$font-call-to-action: Sawasdee;
+$cream: #fff6d5;
+$white: #fff;
+$highlight: #b9bb76c;
+
+.wrapper{
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+body {
+	background-image: url(<%= asset_path 'background.png' %>);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+}
+#banner{
+
+	
+
+	.body{
+		padding: 2rem 6rem 0 0;
+		text-align: center;
+	}
+	.title{
+		color: $cream;
+		font-weight: 800;
+		font-size: 2.0rem;
+		margin-bottom: 12rem;
+	}
+	.ul{
+		text-decoration: none;
+		padding-bottom: 2rem;
+		color: $highlight;
+	}
+	li{	
+		list-style: none;
+		padding: 2rem 5rem 3rem 5rem;
+		display: inline;
+		position: relative;
+		color: $highlight;
+
+	}
+	label{
+		color: $cream;
+	}
+		
+	.form-wrapper{
+		margin-top: 6rem;
+	}
+	.button{
+		border: none;
+		outline: none;
+		border-radius: 2rem;
+		padding-bottom: 2rem;
+		font-weight: 700;
+		color: $white;
+		text-decoration: none;
+		text-align: center;
+		
+		&>input[type="submit"]{
+			color: $white;
+			padding: 0.5rem 1rem;
+			border-radius: 1.2rem;
+			background: rgba(0,0,0, .45);
+			&:hover {
+				background: rgba(0,0,0, .6)
+			}
+		}
+		
+	}
+}

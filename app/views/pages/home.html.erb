@@ -1,18 +1,19 @@
 <section id="banner">
-	<div class="title">
-		<h1> Cerebellium </h1>
-	</div>
-	<div class="body">
-		<h1>Make a memory</h1>
-		<div class="form-wrapper">
+	<div class="wrapper">
+		<div class="body">
+			<div class="title">
+				<h1> Cerebellium </h1>
+			</div>
 			<%= form_tag({controller: "getaway", action: "index"}, method: "post") do %>
-				<ul><li><%= label_tag(:start, "Starting Location") %>
-				<%= text_field_tag(:start) %></li>
-				<li><%= label_tag(:radius, "Max distance Traveled")%>
-				<%= text_field_tag(:radius) %></li>
-				<li><%= label_tag(:price, "How much you're willing to pay (1-3)") %>
-				<%= text_field_tag(:price) %></li>
-				<li class="button"></li> <%= submit_tag("Make a memory") %></li></ul>
+				<div class="button">
+					 <%= submit_tag("Make a memory") %>
+				</div>
+				<ul>
+					<li><%= label_tag(:start, "Starting Location") %>
+					<%= text_field_tag(:start) %></li>
+					<li><%= label_tag(:radius, "Distance to Travel")%>
+					<%= text_field_tag(:radius) %></li>
+				</ul>
 			<% end %>
 		</div>
 	</div>
